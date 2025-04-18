@@ -46,9 +46,9 @@
           <ul class="left hide-on-med-and-down">
             <li data-page="about"><a>About Me</a></li>
             <li data-page="resume"><a>Resume</a></li>
-            <li data-page="contact"><a>Contact</a></li>
             <li data-page="portfolio"><a>Projects</a></li>
-            <li><a href="https://github.com/DannyLiehr" target="_blank"><i class="fa fa-github small" aria-hidden="true"></i></a></li>
+            <li data-page="contact"><a>Contact</a></li>
+            <li><a href="https://github.com/DannyLiehr" target="_blank" rel="noopener" title="My GitHub profile"><i class="fa fa-github small" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </nav>
@@ -56,16 +56,16 @@
       <ul class="sidenav" id="mobile-demo">
         <li data-page="about">About Me</li>
         <li data-page="resume">Resume</li>
-        <li data-page="contact">Contact</li>
         <li data-page="portfolio">Projects</li>
-        <li><a href="https://github.com/DannyLiehr" target="_blank"><i class="fa fa-github small" aria-hidden="true"></i> Github</a></li>
+        <li data-page="contact">Contact</li>
+        <li><a href="https://github.com/DannyLiehr" target="_blank" rel="noopener" title="My Github Profile"><i class="fa fa-github small" aria-hidden="true"></i></a></li>
       </ul>
     <main class="container">
-        <section class="container" id="about">
+        <section class="container initial-hide" id="about">
             <h2>About Me</h2>
             <p>I'm a Jr. Full Stack Developer in Southeast Pennsylvania. I like to create webpages, but I also enjoy working with databases and APIs.</p>
             <p>In my free time, I'm usually either drawing, collecting and researching rocks, taking pictures of flowers, or playing a handful of Sonic games. Sonic and the fan community around the franchise is what got me into web development at such a young age. I also love to travel around the coastal areas of the United States & Canada and see new cities, when I can. So far, I have been to Philadelphia, New York, Boston, Washington DC, Los Angeles, Seattle, Vancouver, and Toronto. I've technically passed through San Francisco, but didn't get to see it. The city I've visted the longest is <strong>Los Angeles</strong>, where I've stayed for a couple summers.</p>
-            <p>When I can, I like to use my skills to support others. Whether it's to help people learn, </p>
+            <p>When I can, I like to use my skills to support others. Whether it's to help people learn, or to somehow improve a part of life, I try to find how I can make a positive impact in my community and beyond.</p>
             <p>Currently learning: Godot/GDScript, Drupal, Blender, C++</p>
         </section>
         <section class="container initial-hide" id="resume">
@@ -122,7 +122,7 @@
             <div class="section" id="work-exp">
                 <h3>Work Experience</h3>
                 <div class="section">
-                    <h4 style="margin-bottom:0;"><a href="https://www.themailshark.com/" target="_blank">Mail Shark</a> - Mohnton, PA - Apr 2022-Present</h4>
+                    <h4 class="no-bottom"><a href="https://www.themailshark.com/" target="_blank" rel="noopener">Mail Shark</a> - Mohnton, PA - Apr 2022-Present</h4>
                     <div>Junior Full Stack Developer</div>
                     <div><small>For privacy purposes, I have requested to not be listed on the Meet the Team page.</small></div>
                     <ul>
@@ -149,7 +149,7 @@
             <div class="section" id="edu">
                 <h3>Education</h3>
                 <div class="section">
-                    <h4 style="margin-bottom:0;">Thaddeus Stevens College of Technology</h4>
+                    <h4 class="no-bottom">Thaddeus Stevens College of Technology</h4>
                     <div>Associate of Applied Science in Computer Software Engineering - Jan 2018 - May 2020</div>
                     <ul>
                         <li>Gained hands on-experience in software development programming languages, and project management.</li>
@@ -163,14 +163,15 @@
             <h2>Contact</h2>
             <div class="row">
                 <div class="col s6">
-                    <a href="https://www.linkedin.com/in/danny-liehr/" target="_blank"><i class="fa fa-linkedin-square medium blue-text" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/danny-liehr/" target="_blank" rel="noopener" title="Visit my LinkedIn profile"><i class="fa fa-linkedin-square medium blue-text" aria-hidden="true"></i></a>
                 </div>
                 <div class="col s-6">
-                    <a href="mailto:dannyliehr@gmail.com"><i class="fa fa-envelope medium green-text" aria-hidden="true"></i></a>
+                    <a href="mailto:dannyliehr@gmail.com" title="Email me"><i class="fa fa-envelope medium green-text" aria-hidden="true"></i></a>
                     
                 </div>
             </div>
-            <p>I am currently in Eastern Standard Time.</p>
+            <p>
+                <i class="fa fa-clock-o" aria-hidden="true"></i> I am currently in Eastern Standard Time. Currently for me, it is <span id="time">0:00</span>.</p>
         </section>
 
         <section class="container initial-hide" id="portfolio">
@@ -186,7 +187,7 @@
                         <p>Lighthouse helps folks with Dissociative Identity Disorder (DID) document their alters, journal about their thoughts, and foster internal communication. As of Apr 2025, it has over 8,000 users. Entire website (1.0+ version) was built by me. Created in December 2021.</p>
                       </div>
                       <div class="card-action">
-                        <a class="yellow-text" href="https://www.writelighthouse.com/" target="_blank">Click here to visit</a>
+                        <a class="yellow-text" href="https://www.writelighthouse.com/" target="_blank" rel="noopener">Click here to visit</a>
                       </div>
                     </div>
                   </div>
@@ -198,7 +199,7 @@
                         <p>Quill Engine will be a Godot project that others can copy and easily start building their own 3D Sonic fan game. The physics are based on Sonic Adventure-era gameplay, and will feature custom-made models and animations.</p>
                       </div>
                       <div class="card-action">
-                        <a class="yellow-text" href="https://github.com/team-crystalline/quill-engine" target="_blank">Github Repository</a>
+                        <a class="yellow-text" href="https://github.com/team-crystalline/quill-engine" target="_blank" rel="noopener">Github Repository</a>
                       </div>
                     </div>
                   </div>
@@ -215,7 +216,7 @@
                         <p>Built in React.</p>
                       </div>
                       <div class="card-action">
-                        <a class="yellow-text" href="https://dannyliehr.github.io/amai-cafe/" target="_blank">Play Online</a>
+                        <a class="yellow-text" href="https://dannyliehr.github.io/amai-cafe/" target="_blank" rel="noopener">Play Online</a>
                       </div>
                     </div>
                   </div>
@@ -224,11 +225,11 @@
                     <div class="card pink darken-1">
                       <div class="card-content white-text">
                         <span class="card-title yellow-text">Tarot Readings</span>
-                        <p>Tired of opening a bunch of tabs to read over the cards you pulled? Type the names of the cards here and instantly get the meaningsin one spot.</p>
+                        <p>Tired of opening a bunch of tabs to read over the cards you pulled? Type the names of the cards here and instantly get the meanings in one spot.</p>
                         <p>Built in Vanilla JS + HTML.</p>
                       </div>
                       <div class="card-action">
-                        <a class="yellow-text" href="https://dannyliehr.github.io/Tarot-Cards/" target="_blank">Play Online</a>
+                        <a class="yellow-text" href="https://dannyliehr.github.io/Tarot-Cards/" target="_blank" rel="noopener">Play Online</a>
                       </div>
                     </div>
                   </div>
@@ -248,17 +249,34 @@
     console.log("Anyway, it was nice chatting here. I hope to hear from you soon!");
     $(document).ready(function(){
         $('.sidenav').sidenav();
+        if (localStorage.getItem('page')) {
+            const page = localStorage.getItem('page');
+            // fade out all sections
+            $('#about, #contact, #resume, #portfolio').fadeOut();
+            $(`#${page}`).fadeIn();
+        } else {
+            $('#about').fadeIn();
+        }
     });
 
     $('[data-page]').on('click', function() {
         const page = $(this).data('page');
+        // save to local storage
+        localStorage.setItem('page', page);
+        // fade out all sections
         $('#about, #contact, #resume, #portfolio').fadeOut();
-        setTimeout(function(){
+        setTimeout(function() {
+            // fade in the selected section
             $(`#${page}`).fadeIn();
-        }, 1000);
+        }, 500);
     });
 
-
+    setInterval(function() {
+        const date = new Date();
+        const options = { timeZone: 'America/New_York', hour: '2-digit', minute: '2-digit'};
+        const timeString = date.toLocaleTimeString('en-US', options);
+        $('#time').text(timeString);
+    }, 1000);
 </script>
 </body>
 </html>
